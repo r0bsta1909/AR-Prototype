@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;' renderer='colorManagement: true; physicallyCorrectLights: true'>
+     <a-entity light="intensity: 5; castShadow: true; decay: -0.44" position="-0.80355 3.40334 1.53898" data-aframe-default-light="" aframe-injected=""></a-entity>
+      <a-entity light="intensity: 5; castShadow: true; decay: -0.44" position="0.00567 0.26023 -2.6189" data-aframe-default-light="" aframe-injected="" visible=""></a-entity>
+      <a-marker type='barcode' value='7' smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='1'>
+        <a-entity
+          position="0 0 0"
+          rotation="-45 8 -4"
+          scale="1 1 1"
+          gltf-model="https://cdn.glitch.me/24c0cbe9-399f-4c91-ab8c-f92794fa1a25/knife%20with%20PBR_with_engraving.glb"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
