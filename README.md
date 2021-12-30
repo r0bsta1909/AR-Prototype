@@ -1,2 +1,2 @@
 # AR-Prototype
-Knife and Watch.
+Knife.
